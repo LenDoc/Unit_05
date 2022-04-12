@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div id="main">
+
+    </div>
+    <div id="res"></div>
+    <script>
+      let main = document.getElementById('main')
+      let res = document.getElementById('res')
+
+      let num1 = new Number(Math.round(Math.random() * 100))
+      let num2 = new Number(Math.round(Math.random() * 100))
+
+      let number1 = document.createElement('p')
+      number1.innerHTML = `Перше число = ${num1}`
+      main.appendChild(number1)
+
+      let number2 = document.createElement('p')
+      number2.innerHTML = `Друге число = ${num2}`
+      main.appendChild(number2)
+
+      let btn = document.createElement('button')
+      btn.innerHTML = '<b>Calculate'
+      main.appendChild(btn)
+      btn.onclick=function(){
+          res.innerHTML=""
+          let sum = document.createElement('p')
+            sum.innerHTML = `Сумма: ${num1+num2}`
+            res.appendChild(sum)
+
+            let sub = document.createElement('p')
+            sub.innerHTML = `Віднімання: ${num1-num2}`
+            res.appendChild(sub)
+
+            let mult = document.createElement('p')
+            mult.innerHTML = `Множення: ${num1*num2}`
+            res.appendChild(mult)
+
+            let div = document.createElement('p')
+            div.innerHTML = `Ділення: ${Math.round(num1/num2).toFixed(2)}`
+            res.appendChild(div)
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        padding: 0 auto;
+        margin: 0 auto;
+        color: #dbe7e9;
+        background-color: #6797a1;
+      }
+      h3 {
+        font-family: 'Courier New', Courier, monospace;
+        color: darkblue;
+        /* background-color: rgb(255, 255, 139); */
+      }
+    </style>
+
+    <script>
+      let N = Math.floor(Math.random() * 10)
+      let arr = new Array()
+      for (let i = 0; i < N; i++) {
+        let elem = Math.floor(Math.random() * (100 - 20)) + 10
+        arr.push(elem)
+      }
+      document.write('Початковий масив:')
+      let arr1 = document.createElement('h3')
+      arr1.innerHTML = `[${arr}]`
+      document.body.appendChild(arr1)
+      //console.log(arr)
+      document.write('Зворотній масив першим способом:')
+
+      let newArr = []
+      for (let i = N - 1; i >= 0; --i) {
+        newArr.push(arr[i])
+      }
+
+      console.log(newArr)
+      let arr2 = document.createElement('h3')
+      arr2.innerHTML = `[${newArr}]`
+      document.body.appendChild(arr2)
+      document.write('Зворотній масив другим способом:')
+
+      let reverseArray = []
+      reverseArray = arr.reverse()
+      let arr3 = document.createElement('h3')
+      arr3.innerHTML = `[${reverseArray}]`
+      document.body.appendChild(arr3)
+
+      console.log(reverseArray)
+    </script>
+  </body>
+</html>

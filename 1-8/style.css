@@ -1,0 +1,35 @@
+div {
+    border: 3px solid rgb(132, 255, 75);
+    background-color: rgba(255, 255, 241, 0.541);
+  }
+  body {
+    background-color: rgba(177, 238, 248, 0.789);
+  }
+  .bg {
+    background-color: rgba(62, 220, 104, 0.71);
+    color: rgb(51, 13, 48);
+  }
+  .bg2 {
+    background-color: rgba(126, 189, 143, 0.71);
+    color: rgb(51, 13, 48);
+  }
+  span {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkblue;
+  }
+  h4 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 81, 195);
+    background-color: rgba(255, 213, 189, 0.73);
+  }
+  h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: darkblue;
+    /* background-color: rgb(255, 255, 139); */
+  }
+  h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(111, 0, 139);
+    background-color: rgb(255, 255, 139);
+  }

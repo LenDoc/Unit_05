@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        padding: 0 auto;
+        margin: 0 auto;
+        color: #dbe7e9;
+        background-color: #6797a1;
+      }
+      h4 {
+        font-family: 'Courier New', Courier, monospace;
+        color: darkblue;
+        background-color: rgb(255, 255, 139);
+      }
+    </style>
+    <script>
+      let num1 = new Number(Math.round(Math.random(1) * 10))
+      let num2 = new Number(Math.round(Math.random(1) * 20))
+      let num3 = new Number(Math.round(Math.random(1) * 20))
+      document.write('Початкові три значення:')
+      let numbers = document.createElement('h4')
+      numbers.innerHTML = `${num1}, ${num2}, ${num3}`
+      document.body.appendChild(numbers)
+
+      const Calculate = (num1 = 0, num2 = 0, num3 = 0) =>
+        (num1 + num2 + num3) / 3
+      document.write('Середнє арифметичне:')
+
+      let res = Math.round(Calculate(num1, num2, num3)).toFixed(2)
+      let result = document.createElement('h4')
+      result.innerHTML = `${res}`
+      document.body.appendChild(result)
+    </script>
+  </body>
+</html>
